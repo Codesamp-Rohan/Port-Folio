@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bevan&family=Grandiflora+One&family=Inter&family=Poppins:wght@900&family=Quicksand:wght@300&family=Rock+3D&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="sideNavbar">
+
+            <a href="#mainIntro">Main Page</a>
+            <a href="#aboutMe">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#">Contact Me</a>
+        </div>
+    </header>
+    <main class="main">
+        <div class="mainNavbar">
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn"><img src="images/menu.png"></button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#mainIntro">Main Page</a>
+                    <a href="#aboutMe">About Me</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#">Contact Me</a>
+                </div>
+            </div>
+            <a href="#"><img src="images/instagram.png"></a>
+            <a href="#"><img src="images/github.png"></a>
+            <a href="#"><img src="images/linkedin.png"></a>
+            <a href="#"><img src="images/twitter.png"></a>
+        </div>
+        <div class="mainIntro" id="mainIntro">
+            <span class="content reveal">
+                <h3>Hey There,</h3>
+                <h1>Rohan<br>Chaudhary
+                </h1>
+                <h3>this side</h3>
+            </span>
+        </div>
+        <div class="aboutMe" id="aboutMe">
+            <h1>About Me</h1>
+            <div class="subIntro reveal">
+                <span class="subContent">
+                    <h3>I am a</h3>
+                    <h1><span class="auto-type"></span></h1>
+                </span>
+                <h3>I'm a Front End Developer and an Engineering student from India.
+
+                    I've been building websites since 2022 with a focus on responsive design, accessibility and
+                    pleasing aesthetics</h3>
+            </div>
+        </div>
+        <div class="project" id="projects">
+            <h1>Projects</h1>
+            <div class="projectArea">
+                <div class="projectCard slideLeft">
+                    <img src="images/INDIA.png" alt="">
+                    <a href="https://codesamp-rohan.github.io/INDIA/">INDIA</a>
+                </div>
+                <div class="projectCard slideRight">
+                    <img src="images/NSCC.png" alt="">
+                    <a href="https://codesamp-rohan.github.io/NSCCBKBIET/">NSCC</a>
+                </div>
+                <div class="projectCard slideLeft">
+                    <img src="images/Porsche.png" alt="">
+                    <a href="https://codesamp-rohan.github.io/PORSCHEvolution/">PORSCHEvolution</a>
+                </div>
+                <div class="projectCard slideRight">
+                    <img src="images/PPF.png" alt="">
+                    <a href="https://codesamp-rohan.github.io/Portfolio2/">Previous PF</a>
+                </div>
+                <div class="projectCard slideLeft">
+                    <img src="images/TCS.png" alt="">
+                    <a href="https://codesamp-rohan.github.io/TCS/">TCS</a>
+                </div>
+                <div class="projectCard slideRight">
+                    <img src="images/DocYard.png" alt="">
+                    <a href="https://codesamp-rohan.github.io/docyard/">Docyard Lab</a>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Web Developer", "Coder", "Freelancer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        });
+    </script>
+    <script src="script.js" type="text/javascript">
+
+    </script>
+</body>
+
+</html>
