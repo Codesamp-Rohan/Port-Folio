@@ -13,7 +13,7 @@ font-family: 'Rock 3D', cursive; */
 
 body {
     /* background-color: #0f0f0f; */
-    background-color: #ededed;
+    background-color: #8696FE;
     color: #262626;
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
@@ -54,6 +54,7 @@ main {
     padding: 20px;
     gap: 20px;
     background: #8696FE;
+    border-right: 0.1px solid white;
 }
 
 .sideNavbar a {
@@ -94,6 +95,7 @@ main {
 }
 
 .mainIntro {
+    background-color: #8696FE;
     display: flex;
     flex-direction: column;
     width: 80vw;
