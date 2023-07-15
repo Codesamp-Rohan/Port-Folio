@@ -57,3 +57,9 @@ function reveal() {
         }
     }
 }
+
+
+function scroll() {
+    document.getElementById("socialLinks").classList.toggle("show");
+    document.getElementById("sidebar").classList.toggle("height");
+}

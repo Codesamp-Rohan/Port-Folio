@@ -13,6 +13,7 @@ body {
     color: white;
     gap: 30px;
     scroll-behavior: smooth;
+    justify-content: center;
 }
 
 .reveal {
@@ -163,18 +164,19 @@ body {
     overflow: auto;
 }
 
-.navbar {
-    background-color: #1e1e1f;
-    border: 1px solid #4b4b4b;
-    border-top: 0px;
-    backdrop-filter: blur(10px);
-    padding-inline: 10px;
-    padding: 20px 40px 20px 40px;
-    width: 30vw;
+.mobileNavbar {
+    display: block;
+    width: 70vw;
+    bottom: 0;
+    padding: 15px 0px;
+    background-color: transparent;
+    position: fixed;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
     z-index: 5;
-    position: absolute;
-    right: 100px;
-    border-radius: 0px 20px 0px 20px;
+    backdrop-filter: blur(2px);
+    border: 1px solid #e3c466;
+    border-bottom: 0px;
 }
 
 .navbarContent {
@@ -521,4 +523,79 @@ button {
     color: white;
     cursor: pointer;
     border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .doingBox {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .box {
+        width: 100%;
+    }
+
+    .webBox img {
+        width: 400px;
+    }
+
+    body {
+        padding-top: 0px;
+        padding-bottom: 100px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 95vw;
+    }
+
+    .mainContent {
+        width: 95vw;
+    }
+
+    .clients {
+        flex-direction: column;
+    }
+
+    .clients .box {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .mobileNavbar {
+        width: 100vw;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .logo {
+        padding-top: 20px;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    .mainContentPortion {
+        padding: 10px;
+    }
+
+    .webBox img {
+        width: 200px;
+    }
 }
