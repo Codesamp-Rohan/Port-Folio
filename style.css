@@ -12,6 +12,19 @@ body {
     background-color: #121212;
     color: white;
     gap: 30px;
+    scroll-behavior: smooth;
+}
+
+.reveal {
+    position: relative;
+    transform: scale(0.7);
+    opacity: 0;
+    transition: all 1s ease-out;
+}
+
+.reveal.active {
+    transform: scale(1);
+    opacity: 1;
 }
 
 /* width */
@@ -331,13 +344,12 @@ body {
 .logo img {
     width: 100px;
     filter: grayscale(0.5);
+    object-fit: contain;
 }
 
 .button {
     color: #e3c466;
 }
-
-.education {}
 
 .educationHeading {
     display: flex;
@@ -426,4 +438,87 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 0px 10px 0px;
+}
+
+.designBox {
+    gap: 40px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.webBox {
+    display: flex;
+    flex-direction: column;
+}
+
+.webBox img {
+    width: 300px;
+    border-radius: 20px;
+    border: 15px solid #323232;
+}
+
+.webBox h4 {
+    font-weight: 400;
+    font-size: 15px;
+    margin: 0px 0px 0px 10px;
+}
+
+.webBox a {
+    text-decoration: none;
+    color: white;
+}
+
+.webBox p {
+    padding: auto;
+    padding-top: 0px;
+    margin-left: 10px;
+}
+
+.contactUs {
+    margin-top: 30px;
+}
+
+.contactUs h2 {
+    font-size: 20px;
+    color: white;
+    border: 0px;
+}
+
+form {
+    gap: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+form input {
+    width: 100%;
+    height: 60px;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid #4b4b4b;
+    padding-left: 20px;
+    color: white;
+}
+
+form textarea {
+    width: 100%;
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid #4b4b4b;
+    color: white;
+    padding: 20px;
+}
+
+button {
+    height: 60px;
+    border: 1px solid #4b4b4b;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
 }
