@@ -56,3 +56,28 @@ function reveal() {
     }
   }
 }
+
+const gamebtnEl = document.querySelector(".game");
+const modelWindowEl = document.querySelector(".modelWindow");
+const overlayEl = document.querySelector(".overlay");
+const closeBtnEl = document.querySelector(".closeBtn");
+
+gamebtnEl.addEventListener("click", function () {
+  modelWindowEl.classList.remove("hidden");
+  overlayEl.classList.remove("hidden");
+});
+closeBtnEl.addEventListener("click", function () {
+  modelWindowEl.classList.add("hidden");
+  overlayEl.classList.add("hidden");
+});
+overlayEl.addEventListener("click", function () {
+  modelWindowEl.classList.add("hidden");
+  overlayEl.classList.add("hidden");
+});
+
+document.addEventListener("keydown", function (e) {
+  if (e.key === "Escape") {
+    modelWindowEl.classList.add("hidden");
+    overlayEl.classList.add("hidden");
+  }
+});

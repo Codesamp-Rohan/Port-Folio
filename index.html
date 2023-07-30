@@ -1,339 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Rohan's Portfolio</title>
-</head>
+  </head>
 
-<body>
+  <body>
+    <div class="sideArea">
+      <a href="#"><button class="game">Games</button></a>
+    </div>
+    <div class="modelWindow hidden">
+      <h1 class="closeBtn">&times;</h1>
+      <a href="https://codesamp-rohan.github.io/PigGame/" class="gamesName"
+        >PIG GAME</a
+      >
+      <a
+        href="https://codesamp-rohan.github.io/guessmynumber/"
+        class="gamesName"
+        >GUESS MY NUMBER!!</a
+      >
+    </div>
+    <div class="overlay hidden"></div>
     <div class="mobileNavbar">
-        <span class="navbarContent">
-            <a href="#" onclick="about()">
-                <p id="aboutTag">About</p>
-            </a>
-            <a href="#" onclick="resume()">
-                <p id="resumeTag">Resume</p>
-            </a>
-            <a href="#" onclick="portfolio()">
-                <p id="portfolioTag">Portfolio</p>
-            </a>
-            <a href="#" onclick="contact()">
-                <p id="contactTag">Contact</p>
-            </a>
-        </span>
+      <span class="navbarContent">
+        <a href="#" onclick="about()">
+          <p id="aboutTag">About</p>
+        </a>
+        <a href="#" onclick="resume()">
+          <p id="resumeTag">Resume</p>
+        </a>
+        <a href="#" onclick="portfolio()">
+          <p id="portfolioTag">Portfolio</p>
+        </a>
+        <a href="#" onclick="contact()">
+          <p id="contactTag">Contact</p>
+        </a>
+      </span>
     </div>
     <div class="sidebar" id="sidebar">
-        <div class="imageCard">
-            <img src="images/Screenshot_2023-07-14_212637-removebg-preview.png" alt="">
-            <span class="contentOfImageCard">
-                <h2>Rohan Chaudhary</h2>
-                <p>Web Developer</p>
-            </span>
+      <div class="imageCard">
+        <img
+          src="images/Screenshot_2023-07-14_212637-removebg-preview.png"
+          alt=""
+        />
+        <span class="contentOfImageCard">
+          <h2>Rohan Chaudhary</h2>
+          <p>Web Developer</p>
+        </span>
+      </div>
+      <div class="socialLinks" id="socialLinks">
+        <span class="email">
+          <img src="images/email.png" />
+          <span class="emailContent">
+            <h5>Email</h5>
+            <a href="mailto:rohanchaudhary.bkbiet2022@gmail.com"
+              >rohanchaudhary.bkbiet2022@gmail.com</a
+            >
+          </span>
+        </span>
+        <span class="email">
+          <img src="images/smartphone-call.png" />
+          <span class="emailContent">
+            <h5>Phone</h5>
+            <a href="tel:8420503040">+91-8420503040</a>
+          </span>
+        </span>
+        <span class="email">
+          <img src="images/calendar.png" />
+          <span class="emailContent">
+            <h5>Birth Date</h5>
+            <a href="mailto:rohanchaudhary.bkbiet2022@gmail.com">03/04/2004</a>
+          </span>
+        </span>
+        <span class="email">
+          <img src="images/pin.png" />
+          <span class="emailContent">
+            <h5>Location</h5>
+            <a href="mailto:rohanchaudhary.bkbiet2022@gmail.com"
+              >Behal, Haryana</a
+            >
+          </span>
+        </span>
+        <div class="social">
+          <a href="https://www.instagram.com/rohan_chaudharygadda/">
+            <img src="images/instagram.png"
+          /></a>
+          <a href="https://github.com/Codesamp-Rohan">
+            <img src="images/github.png"
+          /></a>
+          <a href="https://www.linkedin.com/in/rohan-chaudhary-399742255/">
+            <img src="images/linkedin.png"
+          /></a>
         </div>
-        <div class="socialLinks" id="socialLinks">
-            <span class="email">
-                <img src="images/email.png">
-                <span class="emailContent">
-                    <h5>Email</h5>
-                    <a href="mailto:rohanchaudhary.bkbiet2022@gmail.com">rohanchaudhary.bkbiet2022@gmail.com</a>
-                </span>
-            </span>
-            <span class="email">
-                <img src="images/smartphone-call.png">
-                <span class="emailContent">
-                    <h5>Phone</h5>
-                    <a href="tel:8420503040">+91-8420503040</a>
-                </span>
-            </span>
-            <span class="email">
-                <img src="images/calendar.png">
-                <span class="emailContent">
-                    <h5>Birth Date</h5>
-                    <a href="mailto:rohanchaudhary.bkbiet2022@gmail.com">03/04/2004</a>
-                </span>
-            </span>
-            <span class="email">
-                <img src="images/pin.png">
-                <span class="emailContent">
-                    <h5>Location</h5>
-                    <a href="mailto:rohanchaudhary.bkbiet2022@gmail.com">Behal, Haryana</a>
-                </span>
-            </span>
-            <div class="social">
-                <a href="https://www.instagram.com/rohan_chaudharygadda/"> <img src="images/instagram.png"></a>
-                <a href="https://github.com/Codesamp-Rohan"> <img src="images/github.png"></a>
-                <a href="https://www.linkedin.com/in/rohan-chaudhary-399742255/"> <img src="images/linkedin.png"></a>
-            </div>
-        </div>
+      </div>
     </div>
     <!-- About -->
     <div class="mainContent" id="aboutContent">
-        <div class="mainContentPortion">
-            <h2><span class="auto-type"></span></h2>
-            <p>I'm Website Developer and UI/UX Designer from Haryana, INDIA, working in web development. I enjoy turning
-                complex problems into simple, beautiful and intuitive designs.
-                <br><br>
-                My job is to build your website so that it is functional and user-friendly but at the same time
-                attractive. Moreover, I add personal touch to your product and make sure that is eye-catching and easy
-                to use. My aim is to bring across your message and identity in the most creative way. I created web
-                design for many famous brand companies.
-            </p>
-            <div class="doing">
-                <h3>What I'm Doing</h3>
-                <div class="doingBox">
-                    <span class="box">
-                        <img src="images/coding.png" alt="">
-                        <span class="boxContent">
-                            <h4>Web Design</h4>
-                            <p>The most modern and high-quality design made at a professional level.</p>
-                        </span>
-                    </span>
-                    <span class="box">
-                        <img src="images/web-development.png" alt="">
-                        <span class="boxContent">
-                            <h4>Web Development</h4>
-                            <p>High-quality development of sites at the professional level.</p>
-                        </span>
-                    </span>
-                </div>
-            </div>
-            <div class="testomonials">
-                <h2>Testomonials</h2>
-                <div class="clients">
-                    <div class="box">
-                        <img src="images/my-avatar.png" alt="">
-                        <span class="boxContent">
-                            <a href="#">
-                                <h4>Docyard</h4>
-                            </a>
-                            <p>"I've tried many similar services, but none have come close to Rohan. I'm a happy and
-                                loyal client."</p>
-                        </span>
-                    </div>
-                    <div class="box">
-                        <img src="images/my-avatar.png" alt="">
-                        <span class="boxContent">
-                            <a href="#">
-                                <h4>NSCC</h4>
-                            </a>
-                            <p>The most modern and high-quality design made at a professional level.</p>
-                        </span>
-                    </div>
-                    <div class="box">
-                        <img src="images/my-avatar.png" alt="">
-                        <span class="boxContent">
-                            <a href="#">
-                                <h4>Portfolio</h4>
-                            </a>
-                            <p>The most modern and high-quality design made at a professional level.</p>
-                        </span>
-                    </div>
-                </div>
-            </div>
-            <div class="companyLogo">
-                <h2>Clients</h2>
-                <div class="logo">
-                    <img src="images/image-removebg-preview.png">
-                    <img src="images/docyardbg.png" alt="">
-                </div>
-            </div>
+      <div class="mainContentPortion">
+        <h2><span class="auto-type"></span></h2>
+        <p>
+          I'm Website Developer and UI/UX Designer from Haryana, INDIA, working
+          in web development. I enjoy turning complex problems into simple,
+          beautiful and intuitive designs. <br /><br />
+          My job is to build your website so that it is functional and
+          user-friendly but at the same time attractive. Moreover, I add
+          personal touch to your product and make sure that is eye-catching and
+          easy to use. My aim is to bring across your message and identity in
+          the most creative way. I created web design for many famous brand
+          companies.
+        </p>
+        <div class="doing">
+          <h3>What I'm Doing</h3>
+          <div class="doingBox">
+            <span class="box">
+              <img src="images/coding.png" alt="" />
+              <span class="boxContent">
+                <h4>Web Design</h4>
+                <p>
+                  The most modern and high-quality design made at a professional
+                  level.
+                </p>
+              </span>
+            </span>
+            <span class="box">
+              <img src="images/web-development.png" alt="" />
+              <span class="boxContent">
+                <h4>Web Development</h4>
+                <p>
+                  High-quality development of sites at the professional level.
+                </p>
+              </span>
+            </span>
+          </div>
         </div>
+        <div class="testomonials">
+          <h2>Testomonials</h2>
+          <div class="clients">
+            <div class="box">
+              <img src="images/my-avatar.png" alt="" />
+              <span class="boxContent">
+                <a href="#">
+                  <h4>Docyard</h4>
+                </a>
+                <p>
+                  "I've tried many similar services, but none have come close to
+                  Rohan. I'm a happy and loyal client."
+                </p>
+              </span>
+            </div>
+            <div class="box">
+              <img src="images/my-avatar.png" alt="" />
+              <span class="boxContent">
+                <a href="#">
+                  <h4>NSCC</h4>
+                </a>
+                <p>
+                  The most modern and high-quality design made at a professional
+                  level.
+                </p>
+              </span>
+            </div>
+            <div class="box">
+              <img src="images/my-avatar.png" alt="" />
+              <span class="boxContent">
+                <a href="#">
+                  <h4>Portfolio</h4>
+                </a>
+                <p>
+                  The most modern and high-quality design made at a professional
+                  level.
+                </p>
+              </span>
+            </div>
+          </div>
+        </div>
+        <div class="companyLogo">
+          <h2>Clients</h2>
+          <div class="logo">
+            <img src="images/image-removebg-preview.png" />
+            <img src="images/docyardbg.png" alt="" />
+          </div>
+        </div>
+      </div>
     </div>
     <!-- Resume -->
     <div class="mainContent" id="resumeContent">
-        <div class="mainContentPortion">
-            <h2><span class="auto-type2"></span></h2>
-            <div class="resumeContent">
-                <div class="education">
-                    <span class="educationHeading">
-                        <img src="images/calendar.png" alt="">
-                        <h2>Education</h2>
-                    </span>
-                    <div class="educationBox">
-                        <div class="boxes">
-                            <h3>B K Birla Institute of Engineering and Technology</h3>
-                            <p>2022 - 26</p>
-                            <h4>Pilani, Rajasthan</h4>
-                        </div>
-                        <div class="boxes">
-                            <h3>Thukral Public School</h3>
-                            <p>2020 - 22</p>
-                            <h4>Loharu, Haryana</h4>
-                        </div>
-                        <div class="boxes">
-                            <h3>Vision International School</h3>
-                            <p>2010 - 20</p>
-                            <h4>Uttarpara, West Bengal</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="education">
-                    <span class="educationHeading">
-                        <img src="images/open-book.png" alt="">
-                        <h2>Experience</h2>
-                    </span>
-                    <div class="educationBox">
-                        <div class="boxes">
-                            <h3>Co-Tech Head</h3>
-                            <p>2023 - Present</p>
-                            <h4>NSCC</h4>
-                        </div>
-                        <div class="boxes">
-                            <h3>Front-End Developer</h3>
-                            <p>2022 - Present</p>
-                            <h4>Docyard</h4>
-                        </div>
-                        <div class="boxes">
-                            <h3>Freelancing</h3>
-                            <p>2022 - Present</p>
-                            <h4>Own my Own</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="skill">
-                    <h2>My Skills</h2>
-                    <div class="skillBar">
-                        <div class="percentage">
-                            <p>HTML</p>
-                            <p>95%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="fill1"></span>
-                        </div>
-                        <div class="percentage">
-                            <p>CSS</p>
-                            <p>75%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="fill2"></span>
-                        </div>
-                        <div class="percentage">
-                            <p>Bootstrap</p>
-                            <p>70%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="fill3"></span>
-                        </div>
-                        <div class="percentage">
-                            <p>Js</p>
-                            <p>20%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="fill4"></span>
-                        </div>
-                        <div class="percentage">
-                            <p>Webflow</p>
-                            <p>95%</p>
-                        </div>
-                        <div class="bar">
-                            <span class="fill1"></span>
-                        </div>
-                    </div>
-                </div>
+      <div class="mainContentPortion">
+        <h2><span class="auto-type2"></span></h2>
+        <div class="resumeContent">
+          <div class="education">
+            <span class="educationHeading">
+              <img src="images/calendar.png" alt="" />
+              <h2>Education</h2>
+            </span>
+            <div class="educationBox">
+              <div class="boxes">
+                <h3>B K Birla Institute of Engineering and Technology</h3>
+                <p>2022 - 26</p>
+                <h4>Pilani, Rajasthan</h4>
+              </div>
+              <div class="boxes">
+                <h3>Thukral Public School</h3>
+                <p>2020 - 22</p>
+                <h4>Loharu, Haryana</h4>
+              </div>
+              <div class="boxes">
+                <h3>Vision International School</h3>
+                <p>2010 - 20</p>
+                <h4>Uttarpara, West Bengal</h4>
+              </div>
             </div>
+          </div>
+          <div class="education">
+            <span class="educationHeading">
+              <img src="images/open-book.png" alt="" />
+              <h2>Experience</h2>
+            </span>
+            <div class="educationBox">
+              <div class="boxes">
+                <h3>Co-Tech Head</h3>
+                <p>2023 - Present</p>
+                <h4>NSCC</h4>
+              </div>
+              <div class="boxes">
+                <h3>Front-End Developer</h3>
+                <p>2022 - Present</p>
+                <h4>Docyard</h4>
+              </div>
+              <div class="boxes">
+                <h3>Freelancing</h3>
+                <p>2022 - Present</p>
+                <h4>Own my Own</h4>
+              </div>
+            </div>
+          </div>
+          <div class="skill">
+            <h2>My Skills</h2>
+            <div class="skillBar">
+              <div class="percentage">
+                <p>HTML</p>
+                <p>95%</p>
+              </div>
+              <div class="bar">
+                <span class="fill1"></span>
+              </div>
+              <div class="percentage">
+                <p>CSS</p>
+                <p>75%</p>
+              </div>
+              <div class="bar">
+                <span class="fill2"></span>
+              </div>
+              <div class="percentage">
+                <p>Bootstrap</p>
+                <p>70%</p>
+              </div>
+              <div class="bar">
+                <span class="fill3"></span>
+              </div>
+              <div class="percentage">
+                <p>Js</p>
+                <p>20%</p>
+              </div>
+              <div class="bar">
+                <span class="fill4"></span>
+              </div>
+              <div class="percentage">
+                <p>Webflow</p>
+                <p>95%</p>
+              </div>
+              <div class="bar">
+                <span class="fill1"></span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Portfolio -->
     <div class="mainContent" id="portfolioContent">
-        <div class="mainContentPortion">
-            <h2><span class="auto-type3"></span></h2>
-            <div class="design">
+      <div class="mainContentPortion">
+        <h2><span class="auto-type3"></span></h2>
+        <div class="design">
+          <p>Web Development</p>
+          <div class="designBox">
+            <span class="webBox">
+              <img src="images/DocyardLabs.png" />
+              <a href="">
+                <h4>DocyardLabs</h4>
                 <p>Web Development</p>
-                <div class="designBox">
-                    <span class="webBox">
-                        <img src="images/DocyardLabs.png">
-                        <a href="">
-                            <h4>DocyardLabs</h4>
-                            <p>Web Development</p>
-                        </a>
-                    </span>
-                    <span class="webBox">
-                        <img src="images/NSCC.png">
-                        <a href="">
-                            <h4>NSCC BKBIET</h4>
-                            <p>Web Development</p>
-                        </a>
-                    </span>
-                    <span class="webBox">
-                        <img src="images/Porsche.png">
-                        <a href="">
-                            <h4>Porsche</h4>
-                            <p>Web Development</p>
-                        </a>
-                    </span>
-                    <span class="webBox">
-                        <img src="images/TCS.png">
-                        <a href="">
-                            <h4>Tata Clone</h4>
-                            <p>Web Development</p>
-                        </a>
-                    </span>
-                    <span class="webBox">
-                        <img src="images/PPF.png">
-                        <a href="">
-                            <h4>Portfolio</h4>
-                            <p>Web Development</p>
-                        </a>
-                    </span>
-                    <span class="webBox">
-                        <img src="images/INDIA.png">
-                        <a href="">
-                            <h4>INDIA</h4>
-                            <p>Web Development</p>
-                        </a>
-                    </span>
-                </div>
-            </div>
+              </a>
+            </span>
+            <span class="webBox">
+              <img src="images/NSCC.png" />
+              <a href="">
+                <h4>NSCC BKBIET</h4>
+                <p>Web Development</p>
+              </a>
+            </span>
+            <span class="webBox">
+              <img src="images/Porsche.png" />
+              <a href="">
+                <h4>Porsche</h4>
+                <p>Web Development</p>
+              </a>
+            </span>
+            <span class="webBox">
+              <img src="images/TCS.png" />
+              <a href="">
+                <h4>Tata Clone</h4>
+                <p>Web Development</p>
+              </a>
+            </span>
+            <span class="webBox">
+              <img src="images/PPF.png" />
+              <a href="">
+                <h4>Portfolio</h4>
+                <p>Web Development</p>
+              </a>
+            </span>
+            <span class="webBox">
+              <img src="images/INDIA.png" />
+              <a href="">
+                <h4>INDIA</h4>
+                <p>Web Development</p>
+              </a>
+            </span>
+          </div>
         </div>
+      </div>
     </div>
     <!-- Contact -->
     <div class="mainContent" id="contactContent">
-        <div class="mainContentPortion">
-            <h2><span class="auto-type4"></span></h2>
-            <div class="contactUs">
-                <h2>Contact Form</h2>
-                <form action="get">
-                    <input type="text" placeholder="Name" id="name" name="name">
-                    <input type="email" placeholder="E-mail" id="email" name="email">
-                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
+      <div class="mainContentPortion">
+        <h2><span class="auto-type4"></span></h2>
+        <div class="contactUs">
+          <h2>Contact Form</h2>
+          <form action="get">
+            <input type="text" placeholder="Name" id="name" name="name" />
+            <input type="email" placeholder="E-mail" id="email" name="email" />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <button type="submit">Send Message</button>
+          </form>
         </div>
+      </div>
     </div>
-
 
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
-        var typed = new Typed(".auto-type", {
-            strings: ["About Me."],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-        });
-        var typed = new Typed(".auto-type2", {
-            strings: ["Resume."],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-        });
-        var typed = new Typed(".auto-type3", {
-            strings: ["Portfolio."],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-        });
-        var typed4 = new Typed(".auto-type4", {
-            strings: ["Contact Us."],
-            typeSpeed: 150,
-            backSpeed: 150,
-            loop: true
-        });
+      var typed = new Typed(".auto-type", {
+        strings: ["About Me."],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+      var typed = new Typed(".auto-type2", {
+        strings: ["Resume."],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+      var typed = new Typed(".auto-type3", {
+        strings: ["Portfolio."],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
+      var typed4 = new Typed(".auto-type4", {
+        strings: ["Contact Us."],
+        typeSpeed: 150,
+        backSpeed: 150,
+        loop: true,
+      });
     </script>
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
