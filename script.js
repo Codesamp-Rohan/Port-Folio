@@ -1,3 +1,12 @@
+const cursor = document.querySelector(".cursor");
+
+window.addEventListener("mousemove", (e) => {
+  setTimeout(() => {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+  }, 100);
+});
+
 function resume() {
   document.getElementById("aboutContent").style.display = "none";
   document.getElementById("resumeContent").style.display = "block";
