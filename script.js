@@ -1,3 +1,9 @@
+const loader = document.querySelector(".loading");
+
+window.addEventListener("load", function () {
+  loader.style.display = "none";
+});
+
 const cursor = document.querySelector(".cursor");
 
 window.addEventListener("mousemove", (e) => {
@@ -89,4 +95,30 @@ document.addEventListener("keydown", function (e) {
     modelWindowEl.classList.add("hidden");
     overlayEl.classList.add("hidden");
   }
+});
+
+const sun = document.getElementById("sun");
+const moon = document.getElementById("moon");
+const body = document.querySelector("body");
+const bgImg = document.querySelector(".backgroundImage");
+const navbar = document.querySelector(".mobileNavbar");
+
+const darkMode = document.querySelector("#darkMode");
+const lightMode = document.querySelector("#lightMode");
+
+darkMode.addEventListener("click", function () {
+  darkMode.classList.add("hidden");
+  lightMode.classList.remove("hidden");
+  body.style.backgroundColor = "#748dd0";
+  cursor.style.backgroundColor = "#e3c46659";
+  bgImg.classList.remove("hidden");
+  navbar.style.backgroundColor = "#0000007d";
+});
+
+lightMode.addEventListener("click", function () {
+  lightMode.classList.add("hidden");
+  darkMode.classList.remove("hidden");
+  body.style.backgroundColor = "#121212";
+  cursor.style.backgroundColor = "#ffffffa7";
+  bgImg.classList.add("hidden");
 });

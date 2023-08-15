@@ -6,12 +6,25 @@
     <link rel="stylesheet" href="style.css" />
     <title>Rohan's Portfolio</title>
   </head>
+  <div class="loading">
+    <div class="dots-bars-6"></div>
+  </div>
 
   <body>
     <div class="cursor"></div>
-
+    <div class="backgroundImage hidden">
+      <img loading="lazy" src="images/clouds.jpg" alt="" />
+    </div>
     <div class="sideArea">
       <a href="#"><button class="game">Games</button></a>
+    </div>
+    <div class="mode">
+      <button class="modeButton hidden" id="lightMode">
+        <img src="images/sun.png" class="modeIcon" id="sun" alt="" />
+      </button>
+      <button class="modeButton" id="darkMode">
+        <img src="images/moon.png" class="modeIcon" id="moon" alt="" />
+      </button>
     </div>
     <div class="modelWindow hidden">
       <h1 class="closeBtn">&times;</h1>
@@ -50,8 +63,7 @@
       <div class="imageCard">
         <img
           src="images/Screenshot_2023-07-14_212637-removebg-preview.png"
-          alt=""
-        />
+          alt="" />
         <span class="contentOfImageCard">
           <h2>Rohan Chaudhary</h2>
           <p>Web Developer</p>
@@ -352,8 +364,7 @@
               name="message"
               id="message"
               cols="30"
-              rows="10"
-            ></textarea>
+              rows="10"></textarea>
             <button type="submit">Send Message</button>
           </form>
         </div>
@@ -381,7 +392,7 @@
         loop: true,
       });
       var typed4 = new Typed(".auto-type4", {
-        strings: ["Contact Us."],
+        strings: ["Contact Me."],
         typeSpeed: 150,
         backSpeed: 150,
         loop: true,
